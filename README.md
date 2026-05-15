@@ -1,7 +1,7 @@
 # Iris Dataset Classification with PySpark MLlib
 
 ## Overview of the Project
-This project fulfills Assignment 1 for STQD6324 Data Management. It demonstrates an end-to-end machine learning workflow using PySpark MLlib to classify the Iris dataset into three distinct flower species based on their physical measurements.
+This project fulfills Assignment 1 for STQD6324 Data Management. It demonstrates an end to end machine learning workflow using PySpark MLlib to classify the Iris dataset into three distinct flower species based on their physical measurements.
 
 ## Description of Dataset and Methodology
 * **Dataset**: The Iris dataset is fetched directly from the UC Irvine Machine Learning Repository. It contains 150 instances, each with 4 predictive attributes (sepal length, sepal width, petal length, petal width) and a categorical class label (Iris Setosa, Iris Versicolour, Iris Virginica).
@@ -25,12 +25,12 @@ From a pure computational efficiency standpoint, highly complex ensemble methods
 **2. Hyperparameter Optimization Rationale**
 In large-scale enterprise environments, utilizing an exhaustive Grid Search is often computationally prohibitive, forcing data scientists to rely on randomized search or Bayesian optimization. However, the compact dimensionality of the Iris dataset presents a unique opportunity. It allows us to fully leverage PySpark MLlib's exhaustive `ParamGridBuilder` to pinpoint the absolute mathematical optimum for our hyperparameters without latency penalties. 
 
-Coupling this exhaustive search with 3-fold Cross-Validation was a critical necessity, not an option. Given the small size of the 20% holdout set (~32 rows), cross-validation ensures that our near-perfect evaluation metrics are structurally sound and robust against sampling bias, rather than mere statistical artifacts of a "lucky" train-test split.
+Coupling this exhaustive search with 3-fold Cross-Validation was a critical necessity, not an option. Given the small size of the 20% holdout set (~32 rows), cross-validation ensures that our near-perfect evaluation metrics are structurally sound and robust against sampling bias, rather than mere statistical artifacts of a lucky train-test split.
 
 ## Summary of Results and Key Findings
-All models achieved near-perfect accuracy due to the clean and simple nature of the Iris dataset. However, **Random Forest** was selected as the superior model theoretically due to its ensemble nature, mitigating the overfitting risks associated with standalone decision trees while easily capturing non-linear boundaries.
+All models achieved near perfect accuracy due to the clean and simple nature of the Iris dataset. However, **Random Forest** was selected as the superior model theoretically due to its ensemble nature, mitigating the overfitting risks associated with standalone decision trees while easily capturing non-linear boundaries.
 
 ## Instructions to Reproduce the Analysis
 1. Ensure you have a working Python environment with `pyspark` and `pandas` installed.
-   ```bash
+   bash
    pip install pyspark pandas
