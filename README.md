@@ -32,5 +32,5 @@ All models achieved near perfect accuracy due to the clean and simple nature of 
 
 ## Instructions to Reproduce the Analysis
 1. Ensure you have a working Python environment with `pyspark` and `pandas` installed.
-   bash
+   ```bash
    pip install pyspark pandas
