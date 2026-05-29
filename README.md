@@ -2,7 +2,7 @@
 
 **STQD6324 Data Management — Assignment 1**
 
-An end-to-end multiclass classification project on the classic **Iris** dataset, built entirely with **Apache Spark MLlib**. Three classifiers — Logistic Regression, Decision Tree, and Random Forest — are trained, tuned with cross-validation and grid search, evaluated on a held-out test set, and compared to justify a best model.
+An end to end multiclass classification project on the classic **Iris** dataset, built entirely with **Apache Spark MLlib**. Three classifiers — Logistic Regression, Decision Tree, and Random Forest — are trained, tuned with cross-validation and grid search, evaluated on a held-out test set, and compared to justify a best model.
 
 ---
 
@@ -75,7 +75,7 @@ Note: the split is not stratified, giving an uneven 22/15/9 test-class mix. Usin
 
 ```
 .
-├── Iris_Spark_MLlib.ipynb   # Complete, commented PySpark workflow with explanations + visualizations
+├── Iris_Spark_MLlib_Rev2.ipynb   # Complete, commented PySpark workflow with explanations + visualizations
 ├── iris.csv                 # Iris dataset (offline-reproducible copy)
 ├── requirements.txt         # Python dependencies
 └── README.md                # This file
